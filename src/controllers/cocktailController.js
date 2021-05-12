@@ -5,15 +5,14 @@ const sharp = require('sharp')
 
 exports.post = async (req, res, next) => {
   try {
-    const cocktail = new Cocktail({
+    const cocktail =  new Cocktail({
       name: req.query.name
     })
     await cocktail.save()
+    res.status(201).send(cocktail)
   } catch (e) {
     return res.status(400).send(e)
   }
- 
-  res.status(201).send(cocktail)
 }
 
 exports.get = async (req, res, next) => {

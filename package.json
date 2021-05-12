@@ -1,5 +1,5 @@
 {
-  "name": "mr-cocktail",
+  "name": "mr-cocktail-API",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "author": "Jbtte",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongodb": "^3.6.6",
     "mongoose": "^5.12.6",
